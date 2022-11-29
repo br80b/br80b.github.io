@@ -1,9 +1,9 @@
 <script>                                             
-// I'm lost                         
-<console.log('fuck this is hard');    
-
-const quantity = 2
-const price = 7.99;
-let total = price*quantity
-
-</script>  
+var calculateTotal = function(event) {
+  event.preventDefault();
+  var price = document.getElementById("Price").value;
+  document.getElementById("Total").value = price
+}
+var form = document.getElementById('item_form');
+form.addEventListener('submit', calculateTotal, false);
+</script>
