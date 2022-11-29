@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Car Brand Query</title>
-  </head>
-  <body>
-    <p><b>Share your Favorite Car Brand!</b></p>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
 <form>
-  <form id="item_form" name="item_form">
-  <label for="User_Name">Name:</label>
-  <input type="text" id="Customer" required>
-  <label for="Quantity">Quantity</label>
-  <input type="number" id="Quantity" value="2">
-  <label for="Price">Price</label>
-  <input type="number" id="Price" value="7.99" step="0.01">
-  <label class="total">Total</label>
-  <input type="text" id="Total" readonly>
-  <input type="submit" />
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
 </form>
-  <script src="index.js></script> 
-  </body>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+</body>
 </html>
-
 
 
 
