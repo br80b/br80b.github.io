@@ -11,15 +11,15 @@ body {margin: 30px;}
 <script>
     function totalPrice()
 {
-        qty = document.getElementById("firstNumber").value;
+        qty = document.getElementById("firstAmount").value;
         const price = 7.99;
-        document.getElementById("result").innerHTML = qty * price;
+        document.getElementById("result").innerHTML = $ + qty * price;
 }
 
   </script>
 <form>
-1st Number : <input type="text" id="firstNumber" /><br>
-<input type="button" onClick="totalPrice()" Value="Total Price" />
+Thing You Want <input type="text" id="firstAmount" /><br>
+<input type="button" onClick="totalPrice()" Value="Calculate Total" />
 </form>
 <p>The Result is : <br>
 <span id = "result"></span>
