@@ -1,9 +1,13 @@
-<script>                                             
-var calculateTotal = function(event) {
-  event.preventDefault();
-  var price = document.getElementById("Price").value;
-  document.getElementById("Total").value = price
+function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
 }
-var form = document.getElementById('item_form');
-form.addEventListener('submit', calculateTotal, false);
-</script>
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
