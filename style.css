@@ -1,15 +1,14 @@
 body {
   background-color: black;
+  font-family: "arial";
 }
 
 h1 {
-  font-family: "arial";
   font_size: 32px;
   color: DarkSlateGrey;
 }
 
 p {
-  font-family: "arial";
   font-size: 16px;
   color: DarkSeaGreen
 }
