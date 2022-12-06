@@ -9,18 +9,26 @@
 
 <form>
 Thing You Want ($7.99): <input type="text" id="firstAmount" /><br> 
-<input type="button" onClick="totalPrice()" Value="Calculate Total" />
+<input type="button" onClick="pricecalculation()" Value="Calculate Total" />
 </form>
 <p>Total:<br>
 $ <span id = "result"></span>
 </p>
    <script>
-    function totalPrice()
-{
-        qty = document.getElementById("firstAmount").value;
-        const price = 7.99;
-        document.getElementById("result").innerHTML = qty * price;
-}
+function priceCalculation() {
+var quantity = document.getElementById("quantity_order").value;    
+var price = document.getElementById("price_fixed").value;
+var total = quantity * price;
+var discountPrice = 0  ;
+var discountedTotal = 0;
+const taxRate = 0.085;
+var tax = total * taxRate;
+var totalPlusTax = total + tax;
+
+   if (quantity > 9 || quantity < 20) {
+        discountPrice = .10;        
+        total = total - (total * discountPrice);
+    }        
   </script>     
     
     
