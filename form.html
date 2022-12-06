@@ -9,7 +9,7 @@
 
 <form>
 Thing You Want ($7.99): <input type="text" id="quantity_order" /><br> 
-<input type="button" onClick="pricecalculation()" Value="total" />
+<input type="button" onClick="pricecalculation()" Value="total_unk" />
 </form>
 <p>Total:<br>
 $ <span id = "total"></span>
@@ -17,7 +17,7 @@ $ <span id = "total"></span>
    <script>
 function priceCalculation() {
 var quantity = document.getElementById("quantity_order").value;    
-var price = 7.99
+const price = 7.99
 var total = quantity * price;
 var discountPrice = 0  ;
 var discountedTotal = 0;
