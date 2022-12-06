@@ -8,7 +8,7 @@
     <h1>Total Cost Calculator of That Thing You Want:</h1>
 
 <form>
-Thing You Want ($7.99): <input type="text" id="quantity_order" /><br> 
+Thing You Want ($7.99) Buy 5 or more and get 20% off!: <input type="text" id="quantity_order" /><br> 
 <input type="button" onClick="priceCalculation()" Value="Calculate Total" />
 </form>
 <p>Total:<br>
@@ -26,6 +26,8 @@ var discountedTotal = 0;
         discountPrice = .80;        
         total = total - (total * discountPrice);
     }        
+    
+    document.getElementById("order_total").value = "$" + totalPlusTax.toFixed(2);
   </script>     
     
     
