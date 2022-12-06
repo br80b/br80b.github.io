@@ -9,7 +9,7 @@
 
 <form>
 Thing You Want ($7.99): <input type="text" id="quantity_order" /><br> 
-<input type="button" onClick="pricecalculation()" Value="Calculate Total" />
+<input type="button" onClick="pricecalculation()" Value="total" />
 </form>
 <p>Total:<br>
 $ <span id = "result"></span>
@@ -22,7 +22,7 @@ var total = quantity * price;
 var discountPrice = 0  ;
 var discountedTotal = 0;
 
-   if (quantity > 9 || quantity < 20) {
+   if (quantity > 4 {
         discountPrice = .80;        
         total = total - (total * discountPrice);
     }        
