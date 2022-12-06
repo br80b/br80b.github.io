@@ -12,7 +12,7 @@ Thing You Want ($7.99) Buy 5 or more and get 20% off!: <input type="text" id="qu
 <input type="button" onClick="priceCalculation()" Value="Calculate Total" />
 </form>
 <p>Total:<br>
-$ <span id = "order_total"></span>
+<span id = "order_total"></span>
 </p>
    <script>
 function priceCalculation() {
@@ -25,9 +25,10 @@ var discountedTotal = 0;
    if (quantity > 4){
         discountPrice = .80;        
         total = total - (total * discountPrice);
-    }        
+            
     
     document.getElementById("order_total").value = "$" + discountedtotal.toFixed(2);
+   }
   </script>     
     
     
