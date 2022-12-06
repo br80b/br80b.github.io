@@ -17,16 +17,13 @@ $ <span id = "result"></span>
    <script>
 function priceCalculation() {
 var quantity = document.getElementById("quantity_order").value;    
-var price = document.getElementById("price_fixed").value;
+var price = 7.99
 var total = quantity * price;
 var discountPrice = 0  ;
 var discountedTotal = 0;
-const taxRate = 0.085;
-var tax = total * taxRate;
-var totalPlusTax = total + tax;
 
    if (quantity > 9 || quantity < 20) {
-        discountPrice = .10;        
+        discountPrice = .80;        
         total = total - (total * discountPrice);
     }        
   </script>     
